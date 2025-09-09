@@ -39,8 +39,8 @@ python team_train.py
 
 Key details:
 
-- Curriculum/warmup thresholds, overhead factor schedule, wall probabilities, and PPO schedules are taken from config.json and applied by the callback during training.[^5][^2]
-- The vectorized setup normalizes observations and rewards, clipping observations and excluding message tokens from normalization via norm_obs_keys.[^6]
+- Curriculum/warmup thresholds, overhead factor schedule, wall probabilities, and PPO schedules are taken from config.json and applied by the callback during training.
+- The vectorized setup normalizes observations and rewards, clipping observations and excluding message tokens from normalization via norm_obs_keys.
 
 
 ## TensorBoard
