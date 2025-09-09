@@ -99,21 +99,4 @@ Always load the corresponding VecNormalize stats file alongside a trained model 
 - PPO training loop, vectorized environments, and normalization are powered by Stable-Baselines3 and Gymnasium as imported in the scripts.[^6]
 - GPU acceleration and deterministic trade-offs are set via cuda_optim.py (TF32, cuDNN benchmark) to speed up training on RTX hardware when available.[^8]
 
-<div style="text-align: center">⁂</div>
-
-[^1]: compare.py
-
-[^2]: config.json
-
-[^3]: env_multiple_vacuum.py
-
-[^4]: my_nn.py
-
-[^5]: MyCallback.py
-
-[^6]: team_train.py
-
-[^7]: test.py
-
-[^8]: cuda_optim.py
 
