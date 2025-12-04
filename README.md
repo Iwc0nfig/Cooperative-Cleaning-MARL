@@ -65,9 +65,9 @@ python solve\_with\_planner/replay\_plan.py \--plan vacuum\_plan.json \--delay 0
 Training is driven by team\_train.py, which builds a multi-process vectorized environment wrapped with VecNormalize, configures TensorBoard logging, and applies warmup stages followed by a curriculum that anneals difficulty and PPO hyperparameters. The script reads all environment and PPO parameters from config.json.
 
 Run:
-
+```python
 python team\_train.py
-
+```
 **Key details:**
 
 * Curriculum/warmup thresholds, overhead factor schedule, wall probabilities, and PPO schedules are taken from config.json.  
@@ -78,15 +78,15 @@ python team\_train.py
 ### **TensorBoard**
 
 TensorBoard logs are written to the directory specified by ppo\_params.tensorboard\_log in config.json.
-
+```python
 tensorboard \--logdir logs/ppo\_tensorboard
-
+```
 ### **Evaluate RL in terminal**
 
 Use test.py to render the policy’s behavior step-by-step in the terminal. The script loads a trained PPO model and the corresponding VecNormalize statistics.
-
+```python
 python test.py
-
+```
 *Note: Update MODEL\_PATH and STATS\_PATH in test.py if using different filenames.*
 
 ### **Compare models**
