@@ -66,7 +66,7 @@ Training is driven by team\_train.py, which builds a multi-process vectorized en
 
 Run:
 ```python
-python team\_train.py
+python team_train.py
 ```
 **Key details:**
 
